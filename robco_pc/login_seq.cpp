@@ -25,28 +25,28 @@ login_enter_un:
 	robco_header();
 	cout << " ============================================================== \n\n";
 
-	cout << " Login " << term_name << endl;
+	cout << " Login " << endl;
 	cout << " USR: ";
 	cin >> usr_un;
 
 	usr_match = usr(usr_un);
 
-	if (usr_match != 0) {
-		//ClearScreen();
-		//robco_header();
-		//cout << " ============================================================== \n\n";
-		//cout << " Login " << term_name << endl;
+	if (usr_match == 0) {
+		ClearScreen();
+		robco_header();
+		cout << " ============================================================== \n\n";
+		cout << " Login " << endl;
 		cout << " PWD: ";
 		cin >> passwd;
 
 		pwd_match = pwd(usr_un);
 
 		if (pwd_match != 0) {
-			//ClearScreen();
-			//robco_header();
-			//cout << " ============================================================== \n\n";
-			//cout << " Login " << term_name << endl;
-			cout << "\n PWD: ";
+			ClearScreen();
+			robco_header();
+			cout << " ============================================================== \n\n";
+			cout << " Login " << endl;
+			cout << " PWD: ";
 			cin >> passwd;
 		}
 
@@ -58,7 +58,7 @@ login_enter_un:
 		ClearScreen();
 		robco_header();
 		cout << " ============================================================== \n\n";
-		cout << " Login " << term_name << endl;
+		cout << " Login " << endl;
 		cout << " USR: ";
 		cout << "\n\n\n\n\n\n\n\n\n";
 		cout << " > User not recognized...";

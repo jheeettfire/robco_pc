@@ -8,15 +8,15 @@ void init_robco();
 
 //These are the variables for the initialization
 
-static char pip_boy_ver[100];
-static char ver_PC[100];
-static char ver_year[100];
-static char loader[100];
-static char exec_ver[100];
-static int sys_ram = get_sys_ram(); //Get the system RAM for the current device
-static char holotape_stat[100];
-static char rom_stat[100];
-static char term_name[100];
+//char pip_boy_ver[100];
+//char ver_PC[100];
+//char ver_year[100];
+//char loader[100];
+//char exec_ver[100];
+//int sys_ram = get_sys_ram(); //Get the system RAM for the current device
+//char holotape_stat[100];
+//char rom_stat[100];
+//char term_name[100];
 
 /*
 void init_pipboy() { //Use this to initialize the RobCo PC
